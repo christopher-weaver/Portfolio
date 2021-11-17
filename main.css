@@ -96,6 +96,15 @@ body {
     background-color: var(--palette-4);
 }
 
+.btn-full {
+    width: 97%;
+}
+
+.test {
+    position: absolute;
+    bottom: 0;
+}
+
 .card-feat-btn {
     width: 47%;
     position: absolute;
