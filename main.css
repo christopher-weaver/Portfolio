@@ -13,9 +13,19 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
     .hide-mobile {
-       display: none !important;
+        display: none !important;
+    }
+
+    .max-mobile {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .show-mobile {
+        display: none !important;
     }
 }
 
@@ -42,6 +52,11 @@ body {
     color: var(--palette-4);
 }
 
+.no-link {
+    text-decoration: none;
+    color: var(--palette-5);
+}
+
 .hero {
     height: 51vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/mtn.jpg");
@@ -63,7 +78,7 @@ body {
 }
 
 .hero-title {
-    font-size: 10em;
+    font-size: 8vw;
 }
 
 .hero-lite {
